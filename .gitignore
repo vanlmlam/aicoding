@@ -36,8 +36,10 @@ yarn-error.log*
 .env.*
 !.env.example
 
-# ===== 作業系統 / 部署 =====
-.DS_Store
-Thumbs.db
+# ===== 本專案專屬 =====
+# 暫存筆記與草稿，不進版控
+docs/
+
+# ===== 其他 =====
 *.bak
 *.tmp
