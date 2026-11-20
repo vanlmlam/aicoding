@@ -1,0 +1,43 @@
+# ===== 作業系統 =====
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ===== 編輯器 / IDE =====
+.vscode/
+!.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# ===== 依賴套件 =====
+node_modules/
+bower_components/
+vendor/
+
+# ===== 建置輸出 / 快取 =====
+dist/
+build/
+.cache/
+.temp/
+tmp/
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# ===== 環境變數與機密資訊 =====
+.env
+.env.*
+!.env.example
+
+# ===== 作業系統 / 部署 =====
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
