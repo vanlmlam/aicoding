@@ -1,0 +1,208 @@
+/* ---- Palette sampled from the reference screenshot ---- */
+:root {
+  --page-bg:    #d2e9ff;   /* page background            */
+  --wrap-bg:    #ffffff;   /* 792px white wrapper        */
+  --panel-bg:   #f5fdff;   /* content panel              */
+  --navy:       #333366;   /* nav bar + footer bar       */
+  --head-blue:  #003399;   /* "最新消息" header bar      */
+  --link:       #0366cc;   /* body links                 */
+  --green:      #026601;   /* "熱門資訊" title           */
+  --tick:       #329832;   /* news list tick             */
+  --border:     #cccccc;
+  --radius:     6px;
+}
+
+html, body { height: 100%; }
+
+body {
+  background: var(--page-bg);
+  color: #333;
+  font-family: "PMingLiU", "MingLiU", "微軟正黑體", "Microsoft JhengHei", serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover, a:focus { color: #ff6600; text-decoration: underline; }
+
+/* ================= Top utility bar ================= */
+.ce-topbar {
+  background: url(../images/menu_bg.gif) repeat-x;
+  height: 37px;
+}
+
+.ce-topbar .container-ce {
+  width: 772px;
+  margin: 0 auto;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ce-topnav { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; }
+
+.ce-topnav li { margin: 0; }
+
+.ce-topnav a {
+  display: inline-flex;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 12px;
+  white-space: nowrap;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+}
+
+.ce-topnav a:hover, .ce-topnav a:focus { color: #ff0; text-decoration: none; }
+
+.ce-topnav .ico { font-size: 17px; margin-right: 5px; line-height: 1; }
+
+.ce-lang {
+  background: #fff;
+  color: #217dce;
+  font-size: 13px;
+  padding: 2px 9px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.ce-lang:hover, .ce-lang:focus { color: #217dce; background: #eaf4ff; text-decoration: none; }
+
+/* ================= 792px wrapper ================= */
+.ce-wrap {
+  width: 792px;
+  margin: 0 auto;
+  background: var(--wrap-bg);
+  padding: 10px 0 16px;
+}
+
+.ce-inner { width: 772px; margin: 0 auto; }
+
+.ce-banner { display: block; width: 772px; height: 139px; }
+
+/* ================= Secondary nav ================= */
+.ce-nav {
+  background: var(--navy);
+  border-radius: var(--radius);
+  margin: 12px 0 0;
+  padding: 7px 14px;
+}
+
+.ce-nav ul { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; flex-wrap: wrap; }
+
+.ce-nav li { margin: 0; }
+
+.ce-nav a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 14px;
+  white-space: nowrap;
+}
+
+.ce-nav a:hover, .ce-nav a:focus { color: #ffe680; text-decoration: none; }
+
+.ce-nav .sep { color: #fff; font-weight: bold; padding: 0 2px; }
+
+/* ================= Content panel ================= */
+.ce-panel {
+  background: var(--panel-bg);
+  padding: 25px;
+  margin-top: 10px;
+  min-height: 430px;
+}
+
+/* ================= Cards ================= */
+.ce-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.ce-card-head {
+  background: var(--head-blue);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 5px 8px 10px;
+}
+
+/* ================= Audio / player strip ================= */
+.ce-player {
+  background: #f5f5f5;
+  border-radius: 3px;
+  padding: 4px 8px;
+  margin: 0 8px 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ce-player .pill {
+  border: 1px solid #333;
+  border-radius: 9px;
+  padding: 1px 6px;
+  line-height: 1.2;
+  background: #fff;
+  color: #333;
+}
+
+.ce-player .idx { font-weight: bold; color: #003399; }
+.ce-player .idx .on { color: #d00000; }
+.ce-player .count { color: #666; }
+
+/* ================= News list ================= */
+.ce-news { list-style: none; margin: 0 8px; padding: 0; }
+
+.ce-news li {
+  padding: 9px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.ce-news li:last-child { border-bottom: 0; }
+
+.ce-news .tick {
+  color: var(--tick);
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.ce-news .date { color: #666; white-space: nowrap; }
+
+/* ================= Hot info ================= */
+.ce-hot-title {
+  color: var(--green);
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+  margin: 5px 8px 8px;
+}
+
+.ce-hot { list-style: none; margin: 0 8px; padding: 0 0 8px; }
+
+.ce-hot li { padding: 4px 0; }
+
+.ce-hot .ico { margin-right: 6px; vertical-align: -2px; }
+
+/* ================= Footer ================= */
+.ce-footer {
+  background: var(--navy);
+  border-radius: var(--radius);
+  height: 31px;
+  margin-top: 10px;
+}
+
+/* ================= Narrow screens ================= */
+@media (max-width: 800px) {
+  .ce-topbar .container-ce, .ce-inner { width: 100%; padding: 0 10px; }
+  .ce-wrap { width: 100%; }
+  .ce-banner { width: 100%; height: auto; }
+  .ce-panel { padding: 15px; }
+  .ce-topnav a { padding: 0 6px; font-size: 14px; }
+}
