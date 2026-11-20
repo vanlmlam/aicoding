@@ -1,0 +1,18 @@
+
+body,td,li {
+	font-size: 16px;
+	line-height: 140%;
+	color:#333333;
+}
+
+#nav a:link,#nav a:visited {font-size:14px;line-height:120%;}
+ul.tabs, ul.tabs li {
+
+	height: 40px;
+
+}
+ul.tabs li a {
+
+	padding: 0 5px;
+
+}

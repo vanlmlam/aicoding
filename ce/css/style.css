@@ -1,0 +1,107 @@
+* {box-sizing:border-box}
+#wrap {width:792px; background:#fff; margin:0 auto;padding:10px 0;}
+body {	background:#D2E9FF;padding:0;margin:0;}
+body,td,li {
+	font-size: 13px;
+	line-height: 130%;
+	color:#333333;
+}
+
+a:link, a:visited {color:#0066CC;text-decoration:none}
+a:hover, a:active {color:#FF6600;text-decoration:underline}
+
+/* back-to-top */
+.back-to-top {
+	background: #cecece;
+	border-radius: 6px;
+	bottom: 20px;
+	color: #FFFFFF;
+	display: block;
+	font-size: 40px;
+	height: 50px;
+	line-height: 42px;
+	position: fixed;
+	right: 20px;
+	text-align: center;
+	width: 50px;
+	z-index: 50;
+	display: none;
+}
+.back-to-top:link,.back-to-top:hover, .back-to-top:focus {
+	color: #fff;
+}
+
+table.line {border-collapse: collapse;margin: 1em 0;border: 1px solid #999;}
+table.line th, table.line td {
+	border: 1px solid #999;
+	padding: 4px;
+	line-height: 120%;
+}
+table.line th {
+	color: #fff;
+	padding:5px;
+	background-color: #99CCCC;
+}
+table.line td {	}
+
+.tit {
+	font-size:16px;
+	line-height:150%;
+	font-weight:bold;
+	color:#003399;
+}
+.topic {
+	font-size:20px;
+	line-height:150%;
+	font-weight:bold;
+	color:#333366;
+	background:#fff;
+	border-left:7px solid #0066CC;
+	padding-left:8px;
+	border-bottom:1px solid #ccc;
+
+}
+
+.top {margin-bottom:10px;}
+.content {padding:25px;background:#f5fcff}
+.nolineheight td {	line-height: 100%;}
+.data_menu td {font-size:13px;font-weight:bold;}
+.dbtit {font-size:15px;line-height:150%;font-weight:bold;color:#ff6600;}
+.slide {margin-bottom:10px;}
+
+.newslist_sty1 {padding:0px;font-weight:bold;}
+.newslist_sty1 ul {list-style-type:none;margin:0px;padding:0;}
+.newslist_sty1 ul li {list-style:none;background:url(http://www.dsedj.gov.mo/~webdsej/www/image/icon/webdesignicon2_014.gif) no-repeat 2px 3px;padding:5px 10px 5px 25px;}
+.newslist_sty1 .subj {font-weight:bold;color:#CC3300;}
+.newslist_sty1 .subj a:link, .newslist_sty1.subj a:visited {color:#006600;}
+.newslist_sty1 .subj a:hover, .newslist_sty1.subj a:active {color:#FF6600;}
+.newslist_sty1 .digest {padding:0 10px 10px 25px;border-bottom:1px dashed #ccc;}
+.newslist_sty1 .date {color:#666666;letter-spacing:0px;font-weight:normal;}
+
+
+.hotlink-mid .title {font-weight:bold;color:#006600;border-bottom:1px #ccc solid;padding: 2px 0 0 10px; margin:0 0 5px 0;font-size:15px;}
+.hotlink-mid ul {list-style-type:none;margin:0px;padding:0;}
+.hotlink-mid ul li.borderline {border-bottom:1px solid #ccc;margin-bottom:10px;}
+.hotlink-mid ul li {list-style:none;background:url(http://www.dsedj.gov.mo/~webdsej/www/image/icon/46.gif) no-repeat 5px 5px;padding:0 5px 5px 20px;}
+
+.eng td {line-height: 120%;}
+
+ul.arrow { list-style:none; margin:0 0 0 20px; padding:10px 0 10px 0;}
+ul.arrow li { background:url(../images/port_ul_li.gif) 4px 7px no-repeat; padding:2px 20px; margin:0; line-height:160%; color:#333; }
+
+
+.round_8 {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px 8px;
+    margin-bottom: 10px;
+}
+
+/* ---------- Navigation ---------- */
+
+#nav {background:url(../images/bg_mid_top.gif) left top no-repeat #333366;}
+#nav td {color: #fff;font-weight:bold;}
+#nav a:link,#nav a:visited {color:#FFF;}
+#nav a:hover,#nav a:active {color:#FFFF00}

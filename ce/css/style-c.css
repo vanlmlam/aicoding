@@ -1,0 +1,21 @@
+body, h2, td, th, p, li {
+    font-size: 16px;
+    font-family: "微軟正黑體", "Microsoft JhengHei", sans-serif;
+	line-height: 140%;
+	color:#333333;	
+}
+
+p {line-height:1.6}
+
+#nav a:link,#nav a:visited {font-size:16px;}
+#nav .item {padding:3px 10px;}
+ul.tabs, ul.tabs li {
+
+	height: 20px;
+
+}
+ul.tabs li a {
+letter-spacing:1px;
+	padding: 0 10px;
+
+}

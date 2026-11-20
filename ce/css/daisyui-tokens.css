@@ -1,0 +1,57 @@
+/* ------------------------------------------------------------------
+ * Figma tokens — DaisyUI Community design system
+ * Source file : uuwambKN54ds6h8L541MSL  (DaisyUI - Tailwind Components)
+ * Extracted by : get_variable_defs on node 340:35301 (".Media")
+ * Values below are copied verbatim from the Figma variables.
+ * This file is the single source of truth for the tokens — the React
+ * version under docs/react/tokens/ imports it, do not duplicate it.
+ * ------------------------------------------------------------------ */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap");
+
+:root {
+  /* ---- DaisyUI colors ------------------------------------------- */
+  --d--colors-base-base-100: #f3f4f6;
+  --d--colors-base-base-content: #1f2937;
+  --d--colors-base-neutral: #374151;
+  --t--colors-base-white: #ffffff;
+
+  /* ---- DaisyUI radius ------------------------------------------- */
+  --t--borders-radius-rounded-lg: 8px;
+  --t--borders-radius-rounded-2xl: 16px;
+
+  /* ---- Tailwind spacing ----------------------------------------- */
+  /* Figma variable id is "t--spacing/3,5" (Tailwind spacing-3.5 = 14px). */
+  --t--spacing-0: 0px;
+  --t--spacing-2: 8px;
+  --t--spacing-3-5: 14px;
+  --t--spacing-4: 16px;
+
+  /* ---- DaisyUI text styles -------------------------------------- */
+  --daisyui-font-family: "Roboto", "微軟正黑體", "Microsoft JhengHei",
+    system-ui, -apple-system, sans-serif;
+
+  --daisyui-heading-2-font-size: 24px;
+  --daisyui-heading-2-line-height: 32px;
+  --daisyui-heading-2-font-weight: 600;
+  --daisyui-heading-2-letter-spacing: 0px;
+
+  --daisyui-text-base-font-size: 16px;
+  --daisyui-text-base-line-height: 24px;
+  --daisyui-text-base-font-weight: 400;
+  --daisyui-text-base-letter-spacing: 0px;
+
+  --daisyui-text-sm-font-size: 14px;
+  --daisyui-text-sm-line-height: 20px;
+  --daisyui-text-sm-font-weight: 400;
+  --daisyui-text-sm-letter-spacing: 0px;
+
+  /* ---- Tailwind shadow ------------------------------------------ */
+  --tailwind-box-shadow-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
+
+  /* ---- Frame geometry (read off the Figma frames, not variables) -- */
+  --figma-card-width: 313px;
+  --figma-media-aspect-ratio: 313 / 191;
+  --figma-border-width: 1px;
+}

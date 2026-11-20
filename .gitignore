@@ -40,6 +40,15 @@ yarn-error.log*
 # 暫存筆記與草稿，不進版控
 docs/
 
+# 備份資源（53MB PSD/PDF/xlsx 二進位），不進版控
+ce_bak/
+
+# ===== AI agent / 工具產物 =====
+# Next.js 自動產生
+AGENTS.md
+# Claude Code 本機設定
+settings.local.json
+
 # ===== 其他 =====
 *.bak
 *.tmp

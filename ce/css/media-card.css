@@ -1,0 +1,102 @@
+/* Component styles for the DaisyUI "Media position=Top" card (Figma 335:31753).
+   Every colour / spacing / radius value comes from css/daisyui-tokens.css.
+   The layout rules are self-contained so the card renders correctly even
+   where the shared framework's Bootstrap stylesheet is not loaded. */
+
+.dc-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--t--spacing-2);
+  width: var(--figma-card-width);
+  max-width: 100%;
+  background: var(--t--colors-base-white);
+  border-radius: var(--t--borders-radius-rounded-2xl);
+  box-shadow: var(--tailwind-box-shadow-shadow);
+  overflow: hidden; /* card clips the media image's top corners (radius 16) */
+}
+
+.dc-media {
+  width: 100%;
+  aspect-ratio: var(--figma-media-aspect-ratio);
+  overflow: hidden;
+}
+
+.dc-media__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.dc-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--t--spacing-4);
+  padding: var(--t--spacing-4);
+}
+
+.dc-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--t--spacing-0);
+}
+
+.dc-card__title {
+  margin: 0;
+  font-family: var(--daisyui-font-family);
+  font-size: var(--daisyui-heading-2-font-size);
+  line-height: var(--daisyui-heading-2-line-height);
+  font-weight: var(--daisyui-heading-2-font-weight);
+  letter-spacing: var(--daisyui-heading-2-letter-spacing);
+  color: var(--d--colors-base-base-content);
+}
+
+.dc-card__description {
+  margin: 0;
+  font-family: var(--daisyui-font-family);
+  font-size: var(--daisyui-text-base-font-size);
+  line-height: var(--daisyui-text-base-line-height);
+  font-weight: var(--daisyui-text-base-font-weight);
+  letter-spacing: var(--daisyui-text-base-letter-spacing);
+  color: var(--d--colors-base-neutral);
+}
+
+.dc-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--t--spacing-2);
+}
+
+.dc-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--t--spacing-2);
+  padding: var(--t--spacing-3-5) var(--t--spacing-4);
+  border: var(--figma-border-width) solid var(--d--colors-base-base-100);
+  border-radius: var(--t--borders-radius-rounded-lg);
+  background: var(--d--colors-base-base-100);
+  color: var(--d--colors-base-base-content);
+  font-family: var(--daisyui-font-family);
+  font-size: var(--daisyui-text-sm-font-size);
+  line-height: var(--daisyui-text-sm-line-height);
+  font-weight: var(--daisyui-text-sm-font-weight);
+  letter-spacing: var(--daisyui-text-sm-letter-spacing);
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dc-button:hover,
+.dc-button:focus {
+  color: var(--d--colors-base-base-content);
+  text-decoration: none;
+  background: var(--d--colors-base-base-100);
+  border-color: var(--d--colors-base-base-content);
+}
+
+.dc-button:focus-visible {
+  outline: var(--figma-border-width) solid var(--d--colors-base-base-content);
+  outline-offset: var(--t--spacing-2);
+}
